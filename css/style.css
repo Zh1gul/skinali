@@ -42,6 +42,7 @@ body {
   padding: 25px 45px;
   background-color: #507fe1;
   color: white;
+  font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
 .navbar {
@@ -50,6 +51,7 @@ body {
   top: 0;
   width: 100%;
   background-color: #fff;
+  z-index: 99;
 }
 
 .navbar-wrap {
@@ -82,6 +84,42 @@ body {
   font-style: 14px;
   color: #7b7b79;
   text-decoration: none;
+}
+
+.menu {
+  position: fixed;
+  z-index: 0;
+  top: 80px;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #507fe1;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.menu_active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.menu__link {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .menu-button {
@@ -129,10 +167,9 @@ body {
 }
 
 .hero {
-  background-color: #f1f1f1;
-  background: url("../img/hero/hero-bg.jpg") no-repeat center;
-  background-size: cover;
-  padding-top: 200px;
+  background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center top 80px;
+  background-size: contain;
+  padding-top: 180px;
   padding-bottom: 270px;
 }
 
