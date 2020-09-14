@@ -1,11 +1,12 @@
 .offer
+    background-color: #f1f1f1
     padding: 129px 
     &__block
         background: #fff url('../img/offer/form-bg.png') no-repeat center right
         background-size: contain
         box-shadow: 0 15px 25px rgba(0,0 ,0 ,0.1 )
         padding: 80px
-        margin-top: -50px
+        margin-top: -170px
     &__title
         font-size: 25px
         text-transform: uppercase
@@ -61,6 +62,14 @@
             flex-basis: 100%
             width: 100%    
         &__input
+            margin-bottom: 20px
+@media (max-width: 480px)    
+    .form
+        &__row
+            &-checkbox
+                flex-direction: column
+                align-items: flex-start
+        &__checkbox
             margin-bottom: 20px
 
 
